@@ -1,0 +1,47 @@
+name: cafe  # ชื่อของโปรเจกต์
+description: A new Flutter project.  # คำบรรยายเกี่ยวกับโปรเจกต์
+
+version: 1.0.0+1  # เวอร์ชันของโปรเจกต์ โดยใช้รูปแบบ x.y.z+build
+
+environment:  # กำหนดเวอร์ชัน SDK ที่รองรับ
+  sdk: ">=3.0.0 <4.0.0"  # ระบุว่าต้องการ Dart SDK เวอร์ชัน 3.0.0 ขึ้นไป แต่ไม่เกิน 4.0.0
+
+dependencies:  # ส่วนที่ใช้ในการกำหนดแพ็คเกจที่โปรเจกต์ต้องการ
+  flutter:
+    sdk: flutter  # ใช้ SDK ของ Flutter
+  google_fonts: ^3.0.1  # เพิ่มแพ็คเกจ Google Fonts
+
+dev_dependencies:  # กำหนดแพ็คเกจที่ใช้ในระหว่างการพัฒนา (ไม่ต้องการในโปรดักชัน)
+  flutter_test:
+    sdk: flutter  # ใช้สำหรับการทดสอบ
+  flutter_lints: ^2.0.2  # ใช้สำหรับ linting โค้ด
+  build_runner: ^2.4.9
+
+flutter:  # เริ่มต้นส่วนที่เกี่ยวข้องกับ Flutter
+  uses-material-design: true  # เปิดใช้งานการใช้ Material Design
+
+  assets:  # กำหนดทรัพยากร (assets) ที่โปรเจกต์จะใช้
+    - assets/images/05a7d2e8f440ae578d76bebccfe20094.jpg  # ระบุที่อยู่ของรูปภาพ
+    - assets/images/25bc1fee6ace4796f75850e885469aab.jpg  # รูปภาพอีกหนึ่งไฟล์
+    - assets/images/b5b4ee382390727850c945b450ba68d5.gif
+    - assets/images/343b970c056a308e1361e3f0e7f3df59.jpg
+    - assets/images/55b280d7054807733ca9ade8847125c7.jpg
+    - assets/images/5915bd85e52ca7bbd18997c596185483.jpg
+    - assets/images/70c2bc6aefe339ba29a30173864d9958.jpg
+    - assets/images/819542d9890cd28e835c53c2adec2614.jpg
+    - assets/images/83d29581bea1098b254922abfd3ef67f.jpg
+    - assets/images/d7786b267307d726dd585498cd57c39f.jpg
+    - assets/images/dc1f934dcda8420c4f4dd7ff7b86b690.jpg
+    - assets/images/e87b2c20d5deda662dba5ef050d0d8d8.jpg
+
+  # fonts:  # ถ้าต้องการใช้งานฟอนต์ที่กำหนดเอง สามารถเปิดใช้งานได้
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
